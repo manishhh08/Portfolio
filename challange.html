@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New challange</title>
+    <style>
+      :root {
+        --big-radius: 500px;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .big-circle {
+        height: var(--big-radius);
+        width: var(--big-radius);
+        border-radius: 50%;
+        background-color: red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+      }
+      .circle1 {
+        background-color: blue;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        transform: rotate(0deg) translateX(100px);
+        animation: orbit 4s infinite linear;
+        position: absolute;
+      }
+      .circle2 {
+        background-color: green;
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+        transform: rotate(0deg) translateX(100px);
+        position: absolute;
+        animation: orbit 4s infinite linear;
+        animation-delay: 1s;
+      }
+      @keyframes orbit {
+        0% {
+          transform: rotate(0deg) translateX(100px);
+        }
+        100% {
+          transform: rotate(360deg) translateX(100px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="big-circle">
+      <div class="circle1"></div>
+      <div class="circle2"></div>
+      <!-- <div class="inside">Circle3</div> -->
+    </div>
+  </body>
+</html>
