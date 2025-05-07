@@ -1,25 +1,26 @@
 :root {
   scroll-behavior: smooth;
   --color-orange: orangered;
-  --color-green: #4bdb48;
   --color-dark: #2a2a2a;
+  --color-light: white;
 
   --body-bg: rgb(212, 242, 252);
   --header-bg: rgb(153, 188, 200);
-  --tex-color: var(--color-dark);
+  --text-color: var(--color-dark);
   --border-color: var(--color-dark);
 
   --dark-bg: var(--color-dark);
-  --dark-header-bg: darkblue;
+  --dark-header-bg: grey;
   --dark-text-color: white;
   --dark-border-color: white;
+  --dark-nav-color: white;
 
   --color-hero: var(--color-orange);
 
   --shadow: 4px -2px 40px 9px rgba(128, 128, 128, 0.464);
   --header-shadow: 5px 4px 11px 1px #8a8a8a7d;
 }
-
+/* remove properties of links */
 a {
   text-decoration: none;
   font-weight: bolder;
@@ -41,8 +42,7 @@ a {
   --body-bg: var(--dark-bg);
   color: var(--dark-text-color);
   --header-bg: var(--dark-header-bg);
-
-  --color-hero: var(--color-green);
+  /* --color-hero: var(--color-green); */
 }
 
 #darkmode {
@@ -68,6 +68,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: var(--dark-nav-color);
   background-color: var(--header-bg);
   height: 50px;
   position: sticky;
