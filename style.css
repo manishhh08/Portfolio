@@ -340,6 +340,10 @@ label[for="hamburgerMenu"] {
   border-color: orangered;
   width: 8%;
 }
+.logo > img {
+  width: 150px;
+  height: 50px;
+}
 .contactme .contactlogo {
   display: flex;
   align-items: center;

@@ -1,240 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio - My official Website</title>
 
-    <!-- fontawesome cdn  -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio - My official Website</title>
 
-    <link rel="stylesheet" href="style.css" />
-  </head>
+  <!-- fontawesome cdn  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <body>
-    <input type="checkbox" id="darkmode" />
-    <div class="wrapper">
-      <!-- Dark mode toggle icon -->
-      <label for="darkmode" id="darkmodelabel">
-        <i class="fa-solid fa-circle-half-stroke"></i
-      ></label>
-      <!-- navigation menu -->
-      <header>
-        <div class="container">
-          <div class="logo">MANISH</div>
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-          <input type="checkbox" id="hamburgerMenu" />
-          <div class="menu">
-            <div>
-              <a href="#home">
-                <i class="fa-solid fa-house-chimney-crack"></i> HOME</a
-              >
-            </div>
+<body>
+  <input type="checkbox" id="darkmode" />
+  <div class="wrapper">
+    <!-- Dark mode toggle icon -->
+    <label for="darkmode" id="darkmodelabel">
+      <i class="fa-solid fa-circle-half-stroke"></i></label>
+    <!-- navigation menu -->
+    <header>
+      <div class="container">
+        <div class="logo"><img src="assets/logo.png" alt=""></div>
 
-            <div>
-              <a href="#skills"><i class="fa-solid fa-gear"></i> SKILLS</a>
-            </div>
-
-            <div>
-              <a href="#projects"
-                ><i class="fas fa-project-diagram"></i> PROJECTS</a
-              >
-            </div>
-
-            <div>
-              <a href="#about">
-                <i class="fa-solid fa-circle-info"></i> ABOUT</a
-              >
-            </div>
-
-            <div>
-              <a href="#contact"> <i class="fa-solid fa-phone"></i> CONTACT</a>
-            </div>
-          </div>
-          <label for="hamburgerMenu" test="hamburg">
-            <i class="fa-solid fa-bars"></i>
-          </label>
-        </div>
-      </header>
-
-      <!-- hero section -->
-      <section class="hero-section container" id="home">
-        <div class="grid hero">
-          <div class="left flex">
-            <div>Hi I'm <span>Manish</span></div>
-            <div class="tag">Soft. Engineer</div>
-
-            <div>
-              <!-- <a href="./text.txt" download> -->
-              <button>Download CV <i class="fa-solid fa-download"></i></button>
-            </div>
-          </div>
-          <div class="right flex">
-            <img
-              src="./assets/manish.jpg"
-              alt="manish profile"
-              style="object-fit: cover; height: 300px"
-            />
-          </div>
-        </div>
-      </section>
-      <!-- details section -->
-      <section style="width: 80%">
-        <div class="details" style="width: 100%">
-          <div class="detail_bar">
-            <div class="graduate">
-              <i class="fa-solid fa-graduation-cap"></i>
-              <span>IT</span>
-              <span>Graduate</span>
-            </div>
-            <div
-              class="graduate"
-              style="border-left: 5px solid grey; border-right: 5px solid grey"
-            >
-              <i class="fa-solid fa-list-check"></i>
-              <span>3+ Project</span>
-              <span>Completed</span>
-            </div>
-            <div class="graduate">
-              <i class="fa-solid fa-business-time"></i>
-              <span>1 Year</span>
-              <span>Experience</span>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- skills section -->
-      <section class="skills" id="skills">
-        <div class="skill_header">Skills</div>
-        <div class="skill_bar">
-          <div class="firstskill">
-            <span><i class="fa-brands fa-html5"></i></span>
-            <span>HTML</span>
-          </div>
-          <div class="secondskill">
-            <span><i class="fa-brands fa-css3-alt"></i></span>
-            <span>CSS</span>
-          </div>
-          <div class="thirdskill">
-            <span><i class="fa-brands fa-js"></i></span>
-            <span>Javascript</span>
-          </div>
-          <div class="fourthskill">
-            <span><i class="fa-brands fa-github"></i></span>
-            <span>Github</span>
-          </div>
-          <div class="fifthskill">
-            <span><i class="fa-brands fa-figma"></i></span>
-            <span>Figma</span>
-          </div>
-        </div>
-      </section>
-      <!-- project section -->
-      <section class="project-section container" id="projects">
-        <h2>My Projects</h2>
-        <div class="grid project-grid">
-          <div class="project-card">
-            <iframe
-              src="https://manishhh08.github.io/DC-JS/not-to-list/notlist.html"
-              frameborder="0"
-              style="height: 100%; width: 100%"
-            ></iframe>
-          </div>
-          <div class="project-card">
-            <iframe
-              src="https://manishhh08.github.io/Contact-list/"
-              frameborder="0"
-              style="height: 100%; width: 100%"
-            ></iframe>
-          </div>
-          <div class="project-card">
-            <iframe
-              src="https://manishhh08.github.io/starter/resume.html"
-              frameborder="0"
-              style="height: 100%; width: 100%"
-            ></iframe>
-          </div>
-          <div class="project-card">
-            <img
-              src="assets/extra.jpg"
-              alt=""
-              style="height: 100%; width: 100%"
-            />
-          </div>
-        </div>
-      </section>
-      <!-- about me section -->
-      <section class="aboutme" id="about">
-        <div class="grid_about">
-          <div class="left_flex">
-            <img src="./assets/manish.jpg" alt="" />
-          </div>
-          <div class="right_flex">
-            <div class="aboutheader">About Me</div>
-            <div class="aboutdetails">
-              <span><b>Manish Lama</b></span> <br />
-              <span>
-                Hi, I am Manish and I am enrolled to fullstack development
-                course where I am currently learning the basics of web
-                developement. The following course includes basics of
-                programming such as HTML and CSS and after learning about them I
-                started learning and coding for the front end of the website
-                using Javascript. Next step will be learning React which is a
-                framework for Javascript and will conclude the course with back
-                end development which will use Nodejs.
-              </span>
-              <br />
-              <span><b>Sydney,Australia</b></span>
-              <span>
-                <div class="interest"><b>Interest</b></div>
-                <div class="interestsports">
-                  <span>Basketball</span>
-                  <span>Console Games</span>
-                  <span>Swimming</span>
-                </div>
-              </span>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- contact section -->
-      <section class="contact" id="contact">
-        <div class="contactme">
-          <div class="contacthere">Contact Me</div>
-          <div class="contactlogo">
-            <span
-              ><a
-                href="https://www.linkedin.com/in/manishlama99/"
-                target="_blank"
-                ><i class="fa-brands fa-linkedin"></i></a
-            ></span>
-            <span
-              ><a href="https://github.com/manishhh08" target="_blank"
-                ><i class="fa-brands fa-github"></i></a
-            ></span>
-            <span
-              ><a href="#home"><i class="fa-brands fa-youtube"></i></a
-            ></span>
-            <span
-              ><a href="#home"><i class="fa-solid fa-mobile"></i></a
-            ></span>
-          </div>
+        <input type="checkbox" id="hamburgerMenu" />
+        <div class="menu">
           <div>
-            <h3>OR</h3>
+            <a href="#home">
+              <i class="fa-solid fa-house-chimney-crack"></i> HOME</a>
           </div>
-          <div class="contactinput">
-            <div class="inputarea" style="position: relative">
-              <input
-                type="text"
-                placeholder="abcd@gmail.com"
-                required=""
-                style="
+
+          <div>
+            <a href="#skills"><i class="fa-solid fa-gear"></i> SKILLS</a>
+          </div>
+
+          <div>
+            <a href="#projects"><i class="fas fa-project-diagram"></i> PROJECTS</a>
+          </div>
+
+          <div>
+            <a href="#about">
+              <i class="fa-solid fa-circle-info"></i> ABOUT</a>
+          </div>
+
+          <div>
+            <a href="#contact"> <i class="fa-solid fa-phone"></i> CONTACT</a>
+          </div>
+        </div>
+        <label for="hamburgerMenu" test="hamburg">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+      </div>
+    </header>
+
+    <!-- hero section -->
+    <section class="hero-section container" id="home">
+      <div class="grid hero">
+        <div class="left flex">
+          <div>Hi I'm <span>Manish</span></div>
+          <div class="tag">Soft. Engineer</div>
+
+          <div>
+            <!-- <a href="./text.txt" download> -->
+            <button>Download CV <i class="fa-solid fa-download"></i></button>
+          </div>
+        </div>
+        <div class="right flex">
+          <img src="./assets/manish.jpg" alt="manish profile" style="object-fit: cover; height: 300px" />
+        </div>
+      </div>
+    </section>
+    <!-- details section -->
+    <section style="width: 80%">
+      <div class="details" style="width: 100%">
+        <div class="detail_bar">
+          <div class="graduate">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <span>IT</span>
+            <span>Graduate</span>
+          </div>
+          <div class="graduate" style="border-left: 5px solid grey; border-right: 5px solid grey">
+            <i class="fa-solid fa-list-check"></i>
+            <span>3+ Project</span>
+            <span>Completed</span>
+          </div>
+          <div class="graduate">
+            <i class="fa-solid fa-business-time"></i>
+            <span>1 Year</span>
+            <span>Experience</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- skills section -->
+    <section class="skills" id="skills">
+      <div class="skill_header">Skills</div>
+      <div class="skill_bar">
+        <div class="firstskill">
+          <span><i class="fa-brands fa-html5"></i></span>
+          <span>HTML</span>
+        </div>
+        <div class="secondskill">
+          <span><i class="fa-brands fa-css3-alt"></i></span>
+          <span>CSS</span>
+        </div>
+        <div class="thirdskill">
+          <span><i class="fa-brands fa-js"></i></span>
+          <span>Javascript</span>
+        </div>
+        <div class="fourthskill">
+          <span><i class="fa-brands fa-github"></i></span>
+          <span>Github</span>
+        </div>
+        <div class="fifthskill">
+          <span><i class="fa-brands fa-figma"></i></span>
+          <span>Figma</span>
+        </div>
+      </div>
+    </section>
+    <!-- project section -->
+    <section class="project-section container" id="projects">
+      <h2>My Projects</h2>
+      <div class="grid project-grid">
+        <div class="project-card">
+          <iframe src="https://manishhh08.github.io/DC-JS/not-to-list/notlist.html" frameborder="0"
+            style="height: 100%; width: 100%"></iframe>
+        </div>
+        <div class="project-card">
+          <iframe src="https://manishhh08.github.io/Contact-list/" frameborder="0"
+            style="height: 100%; width: 100%"></iframe>
+        </div>
+        <div class="project-card">
+          <iframe src="https://manishhh08.github.io/starter/resume.html" frameborder="0"
+            style="height: 100%; width: 100%"></iframe>
+        </div>
+        <div class="project-card">
+          <img src="assets/extra.jpg" alt="" style="height: 100%; width: 100%" />
+        </div>
+      </div>
+    </section>
+    <!-- about me section -->
+    <section class="aboutme" id="about">
+      <div class="grid_about">
+        <div class="left_flex">
+          <img src="./assets/manish.jpg" alt="" />
+        </div>
+        <div class="right_flex">
+          <div class="aboutheader">About Me</div>
+          <div class="aboutdetails">
+            <span><b>Manish Lama</b></span> <br />
+            <span>
+              Hi, I am Manish and I am enrolled to fullstack development
+              course where I am currently learning the basics of web
+              developement. The following course includes basics of
+              programming such as HTML and CSS and after learning about them I
+              started learning and coding for the front end of the website
+              using Javascript. Next step will be learning React which is a
+              framework for Javascript and will conclude the course with back
+              end development which will use Nodejs.
+            </span>
+            <br />
+            <span><b>Sydney,Australia</b></span>
+            <span>
+              <div class="interest"><b>Interest</b></div>
+              <div class="interestsports">
+                <span>Basketball</span>
+                <span>Console Games</span>
+                <span>Swimming</span>
+              </div>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- contact section -->
+    <section class="contact" id="contact">
+      <div class="contactme">
+        <div class="contacthere">Contact Me</div>
+        <div class="contactlogo">
+          <span><a href="https://www.linkedin.com/in/manishlama99/" target="_blank"><i
+                class="fa-brands fa-linkedin"></i></a></span>
+          <span><a href="https://github.com/manishhh08" target="_blank"><i class="fa-brands fa-github"></i></a></span>
+          <span><a href="#home"><i class="fa-brands fa-youtube"></i></a></span>
+          <span><a href="#home"><i class="fa-solid fa-mobile"></i></a></span>
+        </div>
+        <div>
+          <h3>OR</h3>
+        </div>
+        <div class="contactinput">
+          <div class="inputarea" style="position: relative">
+            <input type="text" placeholder="abcd@gmail.com" required="" style="
                   color: white;
                   background: transparent;
                   border: 0px;
@@ -243,10 +200,8 @@
                   border-radius: 40px;
                   padding-left: 10px;
                   content: wrap;
-                "
-              />
-              <button
-                style="
+                " />
+            <button style="
                   background: transparent;
                   border: 0px;
                   position: absolute;
@@ -254,50 +209,40 @@
                   color: orange;
                   top: 7px;
                   font-size: 1.5rem;
-                "
-              >
-                <i class="fa-solid fa-paper-plane"></i>
-              </button>
-              <label for="input"></label>
-            </div>
+                ">
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+            <label for="input"></label>
           </div>
         </div>
-      </section>
-      <!-- footer section -->
-      <footer>
-        <div class="alllinks">
-          <div class="links">
-            <b>Links</b> <br />
-            <span><a href="#home">Home</a></span>
-            <span><a href="#skills">Skills</a></span>
-            <span><a href="#projects">Project</a></span>
-            <span><a href="#contact">Contact</a></span>
-          </div>
-          <div class="sociallinks">
-            <b>Social Links</b> <br />
-            <span
-              ><a
-                href="https://www.linkedin.com/in/manishlama99/"
-                target="_blank"
-                >LinkedIn</a
-              ></span
-            >
-            <span
-              ><a href="https://github.com/manishhh08" target="_blank"
-                >Github</a
-              ></span
-            >
-            <span><a href="#about">Facebook</a></span>
-            <span><a href="#contact">Youtube</a></span>
-          </div>
+      </div>
+    </section>
+    <!-- footer section -->
+    <footer>
+      <div class="alllinks">
+        <div class="links">
+          <b>Links</b> <br />
+          <span><a href="#home">Home</a></span>
+          <span><a href="#skills">Skills</a></span>
+          <span><a href="#projects">Project</a></span>
+          <span><a href="#contact">Contact</a></span>
         </div>
-        <span>©<b>Manish Official Website</b> </span>
-        <span>All copyright reserved by Manish!!!!</span>
-      </footer>
-      <!-- gotohome button -->
-      <!-- <div class="gotohome">
+        <div class="sociallinks">
+          <b>Social Links</b> <br />
+          <span><a href="https://www.linkedin.com/in/manishlama99/" target="_blank">LinkedIn</a></span>
+          <span><a href="https://github.com/manishhh08" target="_blank">Github</a></span>
+          <span><a href="#about">Facebook</a></span>
+          <span><a href="#contact">Youtube</a></span>
+        </div>
+      </div>
+      <span>©<b>Manish Official Website</b> </span>
+      <span>All copyright reserved by Manish!!!!</span>
+    </footer>
+    <!-- gotohome button -->
+    <!-- <div class="gotohome">
         <a href="#home"><i class="fa-solid fa-up-long"></i></a>
       </div> -->
-    </div>
-  </body>
+  </div>
+</body>
+
 </html>
